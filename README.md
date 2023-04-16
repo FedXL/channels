@@ -1,26 +1,28 @@
-# channels
-Channel management project.
+# Channel Management Project
 
-1. create configuration file as config.py
-for example u can use sqlite databases:
++ This project is a channel management system that allows you to manage multiple databases and hosts. 
++ The system uses SQLite databases and can be configured by modifying the `config.py` file.
 
-config_local = 'sqlite:///local.db'
-config_server_1 = 'sqlite:///server1.db'
-config_server_2 = 'sqlite:///server2.db'
+## Configuration
 
-host = 'localhost'
-port = '5000'
++ To configure the system, create the `config.py` file with the following parameters:
+- `config_local`: Local database configuration.
+- `config_server_1`: Configuration for server 1.
+- `config_server_2`: Configuration for server 2.
+- `host`: Host for the application.
+- `port`: Port for the application.
+- `SECRET_KEY`: Key used to generate safe-forms in the Flask app.
 
-SECRER_KEY='...' it is key to generate safe-forms in flask app
+## Creating Test Databases
 
-2. run engine_and_models.py to create test databases
++ To create test databases, run `engine_and_models.py`.
 
-3. add to congig_local database into table 'users' username and password
+## Adding Users
 
-to add password u shold generate hash from your password 
-i used wekzeug lib. 
-from werkzeug.security import generate_password_hash
-hash = generate_password_hash(password)
++ To add a user to the `users` table in the `config_local` database, generate a hash from the user's password using the `werkzeug.security.generate_password_hash` method. Then, add the username and hashed password to the `users` table.
 
-4. run loop.py 
-5. run app.py
+## Running the Application
+
++ To run the application, first run `loop.py`, and then run `app.py`.
+
+**Note:** Make sure that the required libraries and dependencies are installed before running the application.
