@@ -12,7 +12,7 @@
 - `host`: Host for the application.
 - `port`: Port for the application.
 - `SECRET_KEY`: Key used to generate safe-forms in the Flask app.
-
+- You can use 'sqlite:///local.db', 'sqlite:///server1.db','sqlite:///server2.db' to create test sqllite databases
 ## Creating Test Databases
 
 + To create test databases, run `engine_and_models.py`.
