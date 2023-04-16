@@ -1,7 +1,9 @@
 # Channel Management Project
 
-+ This project is a channel management system that allows you to manage multiple databases and hosts. 
-+ The system uses SQLite databases and can be configured by modifying the `config.py` file.
++ This project is a channel management system that allows you to manage multiple channels across different databases and hosts. 
++ It provides a centralized solution for managing data across different environments.
+
+
 
 ## Configuration
 
